@@ -201,6 +201,24 @@ export default function Home() {
             maxWidth: '500px'
           }}
         />
+
+        <div style={{ marginTop: '20px', textAlign: 'center', width: '80%', maxWidth: '500px' }}>
+          <label>Select Data to Display:</label>
+          <select multiple onChange={handleFilterChange} style={{
+            padding: '10px',
+            borderRadius: '5px',
+            border: '1px solid #ccc',
+            fontSize: '1rem',
+            marginTop: '10px',
+            width: '100%',
+            maxWidth: '500px',
+          }}>
+            <option value="Alphabets">Alphabets</option>
+            <option value="Numbers">Numbers</option>
+            <option value="Highest lowercase alphabet">Highest lowercase alphabet</option>
+          </select>
+        </div>
+
         <button type='submit' style={{
           backgroundColor: '#007BFF',
           color: '#fff',
@@ -209,6 +227,7 @@ export default function Home() {
           borderRadius: '5px',
           fontSize: '1rem',
           cursor: 'pointer',
+          marginTop: '20px',
           width: '80%',
           maxWidth: '500px'
         }}>
@@ -216,23 +235,6 @@ export default function Home() {
         </button>
       </form>
       {error && <p style={{ color: 'red', marginTop: '10px' }}>{error}</p>}
-
-      <div style={{ marginTop: '20px', textAlign: 'center', width: '80%', maxWidth: '500px' }}>
-        <label>Select Data to Display:</label>
-        <select multiple onChange={handleFilterChange} style={{
-          padding: '10px',
-          borderRadius: '5px',
-          border: '1px solid #ccc',
-          fontSize: '1rem',
-          marginTop: '10px',
-          width: '100%',
-          maxWidth: '500px',
-        }}>
-          <option value="Alphabets">Alphabets</option>
-          <option value="Numbers">Numbers</option>
-          <option value="Highest lowercase alphabet">Highest lowercase alphabet</option>
-        </select>
-      </div>
 
       {response && (
         <div style={{ marginTop: '20px', textAlign: 'center', width: '80%', maxWidth: '500px' }}>
@@ -249,3 +251,4 @@ export default function Home() {
     </div>
   );
 }
+
