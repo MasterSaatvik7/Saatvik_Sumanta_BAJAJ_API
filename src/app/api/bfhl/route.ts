@@ -30,9 +30,9 @@ export async function POST(request: NextRequest) {
 
   const response: ApiResponseData = {
     is_success: true,
-    user_id: "shakti_nayak_10072003", 
-    email: "shaktisantosh.nayak2021@vitstudent.ac.in", 
-    roll_number: "21BRS1490",
+    user_id: "saatvik_sumanta_28012002", 
+    email: "saatvik.sumanta2021@vitstudent.ac.in", 
+    roll_number: "21BRS1435",
     numbers,
     alphabets,
     highest_lowercase_alphabet: highestLowercase,
