@@ -30,9 +30,9 @@ export async function POST(request: NextRequest) {
 
   const response: ApiResponseData = {
     is_success: true,
-    user_id: "john_doe_17091999", // Replace with dynamic ID generation
-    email: "john@xyz.com", // Replace with dynamic email
-    roll_number: "ABCD123", // Replace with dynamic roll number
+    user_id: "shakti_nayak_10072003", 
+    email: "shaktisantosh.nayak2021@vitstudent.ac.in", 
+    roll_number: "21BRS1490",
     numbers,
     alphabets,
     highest_lowercase_alphabet: highestLowercase,
