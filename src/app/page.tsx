@@ -58,7 +58,7 @@ export default function Home() {
     setInput(e.target.value);
   };
 
-  const handleFilterChange = (e: ChangeEvent<HTMLSelectElement>) => {
+  const handleFilterChange = (e: any) => {
     setFilter([...e.target.selectedOptions].map(option => option.value));
   };
 
